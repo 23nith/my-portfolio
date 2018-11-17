@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <video src="Resources/typing-man.mp4" playsinline autoplay loop="true"></video>
+        <video id="video" src="Resources/typing-man.mp4" playsinline autoplay loop="true"></video>
     </header>
 
     <nav>
@@ -43,5 +43,9 @@
 
     <!-- SCRIPT -->
     <script src="js/main.js"></script>
+    <script>
+        var video = document.querySelector('#video'); 
+        video.addEventListener('DOMContentLoaded',function(){ video.play(); },false);
+    </script>
 </body>
 </html>
