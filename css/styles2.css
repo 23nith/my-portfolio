@@ -167,14 +167,18 @@ div.flex-right.toggleOn li {
     font-size: 5rem !important; } }
 @media (max-width: 400px) {
   div.name-container .name {
-    font-size: 3rem !important; }
-    div.name-container .name #one {
-      top: 50px;
-      left: 50px; }
-    div.name-container .name #two {
-      top: 150px;
-      left: 50px; }
-    div.name-container .name #three {
-      top: 250px;
-      left: 50px;
-      color: red; } }
+    font-size: 3rem !important;
+    top: 60px !important; }
+
+  #one {
+    top: 100px !important;
+    left: 50px; }
+
+  #two {
+    top: 150px !important;
+    left: 50px; }
+
+  #three {
+    top: 200px !important;
+    left: 50px;
+    color: red; } }
