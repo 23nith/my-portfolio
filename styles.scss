@@ -214,6 +214,25 @@ div.flex-right.toggleOn li {
 // media querries
 
 @media (max-width: 550px) {
+    div.flex-container {
+        flex-direction: column !important;
+
+        .menu {
+            margin-top: 10vh !important;
+        }
+
+    }
+    div.flex-left {
+        transform: translate(-100vh, 0) !important;
+    }
+    div.flex-left.toggleOn{
+        transform: translate(0, 0) !important;
+    }
+
+    div.flex-right {
+        transform: translate(100vh, 0) !important;
+    }
+
     div.name-container {
         width: 95vw !important;
     }
