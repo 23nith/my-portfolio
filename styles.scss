@@ -101,6 +101,7 @@ body {
                     list-style-type: none;
                     text-align: center;
                     margin-top: 40vh;
+                    padding-inline-start: 0;
 
                     @for $x from 1 to 3 {
                         li:nth-child(#{$x}){
