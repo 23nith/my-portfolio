@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    overflow: hidden !important;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.flex-right, .flex-left {
+    flex: 1;
+    border: 1px solid white;
+    /* transform: translate(0, 50vh); */
+    background-color: red;
+    opacity: .60;
+    padding: 0;
+}
+
+.button {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 30px;
+}
+
+.line {
+    padding: 2px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+}
+
+#line1 {
+    transform: translate(0, 10px) rotate(0.13turn);
+}
+
+#line2 {
+    opacity: 0;
+}
+
+#line3 {
+    transform: translate(0, -10px) rotate(-0.13turn);
+}
+
+div.name-container{
+    overflow: hidden;
+}
+
+.name {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: white;
+    font-size: 8rem;
+    margin: 0;
+    position: absolute;
+    top: 30vh;
+}
+
+#one {
+    top: 50px;
+    left: 50px;
+}
+
+#two {
+    top: 150px;
+    left: 50px;
+}
+
+#three {
+    top: 250px;
+    left: 50px;
+    color: red;
+}
+
+.menu {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.menu li {
+    margin-bottom: .5rem;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    color: grey;
+}
+
+.menu li a.current {
+    color: white;
+}

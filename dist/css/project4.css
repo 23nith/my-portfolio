@@ -1,0 +1,8 @@
+footer {
+  background-color: #333 !important; }
+
+.navbar {
+  padding: 0; }
+  .navbar .nav-item {
+    padding: 0;
+    margin: 0 8px 0 8px; }

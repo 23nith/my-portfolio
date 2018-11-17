@@ -1,0 +1,66 @@
+.navbar .nav-link {
+  font-size: 14px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important; }
+
+.navbar .nav-link.active {
+  border-left: 3px solid #444; }
+
+.carousel-item {
+  height: 450px; }
+
+.carousel-image-1 {
+  background: url(../Resources/project3/image1.jpg);
+  background-size: cover; }
+
+.carousel-image-2 {
+  background: url(../Resources/project3/image2.jpg);
+  background-size: cover; }
+
+.carousel-image-3 {
+  background: url(../Resources/project3/image3.jpg);
+  background-size: cover; }
+
+.image-lights {
+  background: url(../Resources/project3/lights.jpg);
+  height: 200px;
+  background-attachment: fixed; }
+
+.image-media {
+  background: url(../Resources/project3/media.jpg);
+  height: 200px;
+  background-attachment: fixed; }
+
+#actualFooter {
+  background-color: black !important; }
+
+.about-first-image, .services-first-image {
+  background-image: url("../Resources/project3/image1.jpg");
+  height: 200px;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.rel {
+  position: relative; }
+
+.about-second-image {
+  margin-top: -50px; }
+
+#accordion .card {
+  background-color: #333;
+  color: white;
+  font-size: 20px; }
+
+
+#accordion .card-header {
+  cursor: pointer;
+}
