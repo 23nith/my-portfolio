@@ -76,7 +76,8 @@ body {
         body nav .flex-container .flex-right .menu {
           list-style-type: none;
           text-align: center;
-          margin-top: 40vh; }
+          margin-top: 40vh;
+          padding-inline-start: 0; }
           body nav .flex-container .flex-right .menu li:nth-child(1) {
             transition-delay: 0.2s; }
           body nav .flex-container .flex-right .menu li:nth-child(2) {
