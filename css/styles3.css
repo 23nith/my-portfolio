@@ -127,7 +127,10 @@ body {
 
 .card:hover {
   border: 1px solid red;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  box-shadow: 3px 10px #888888;
+  transform: translate(-3px, -10px);
+  margin: -16px; }
   .card:hover .card-body {
     background: red;
     color: white;
