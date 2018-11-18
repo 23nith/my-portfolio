@@ -125,6 +125,17 @@ body {
       left: 50px;
       color: red; }
 
+.card:hover {
+  border: 1px solid red;
+  transition: all 0.5s ease-out; }
+  .card:hover .card-body {
+    background: red;
+    color: white;
+    font-weight: 800;
+    transition: all 0.2s ease-out; }
+    .card:hover .card-body .card-title {
+      font-size: 2rem !important; }
+
 div.flex-left.toggleOn {
   transform: translate(0, 0) !important; }
 
