@@ -91,9 +91,13 @@ body {
               text-decoration: none;
               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
               font-size: 3rem;
-              color: grey; }
+              color: grey;
+              transition: all 0.5s ease-out; }
               body nav .flex-container .flex-right .menu li a.current {
                 color: white; }
+              body nav .flex-container .flex-right .menu li a:hover {
+                font-weight: 800;
+                color: #fff; }
   body .button {
     position: absolute;
     right: 25px;
