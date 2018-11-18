@@ -70,6 +70,8 @@ body {
       body nav .flex-container .flex-left {
         transform: translate(0, 100vh);
         transition: all 0.5s ease-out; }
+        body nav .flex-container .flex-left .row {
+          border-radius: 50%; }
       body nav .flex-container .flex-right {
         transform: translate(0, -100vh);
         transition: all 0.5s ease-out; }

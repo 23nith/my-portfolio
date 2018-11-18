@@ -42,7 +42,8 @@ body {
         overflow-y: auto;
         overflow-x: hidden;
         height: 70vh;
-        position: fixed; }
+        position: fixed;
+        background: #111214; }
       body nav .flex-container .flex-right, body nav .flex-container .flex-left {
         flex: 1;
         border: 1px solid white;
@@ -54,6 +55,9 @@ body {
       body nav .flex-container .flex-left {
         transform: translate(0, 100vh);
         transition: all 0.5s ease-out; }
+        body nav .flex-container .flex-left .row img {
+          opacity: 100 !important;
+          margin-top: 30vh; }
       body nav .flex-container .flex-right {
         transform: translate(0, -100vh);
         transition: all 0.5s ease-out; }
