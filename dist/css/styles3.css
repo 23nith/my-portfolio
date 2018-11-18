@@ -154,7 +154,8 @@ div.flex-right.toggleOn li {
   div.flex-container {
     flex-direction: column !important; }
     div.flex-container .menu {
-      margin-top: 10vh !important; }
+      margin-top: 10vh !important;
+      padding-inline-start: 0; }
 
   div.flex-left {
     transform: translate(-100vh, 0) !important; }
