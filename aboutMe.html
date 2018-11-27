@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Work</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles4.css">
+</head>
+<body>  
+    <style>
+        body {
+            background-color: #252425;
+        }
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .grid-section div {
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+        }
+
+        .grid-section div h4 {
+            margin-top: 15vh;
+            
+        }
+
+        .one, .two, .three, .four {
+            grid-column: 2/3;
+            grid-row: 1/4;
+            visibility: hidden;
+            background: #D0242B;
+            transition: all 0.5s ease-out;
+        }
+        .one .container {
+            position: relative;
+            z-index: 3;            
+        }
+        .middle {
+            float: none;
+            margin: 0 auto;
+            font-weight: 700;
+        }
+        .one .container ul{
+            list-style-type: none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+
+        .one {
+            position: relative;
+            background-image: url("Resources/busystreet.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease-out;
+        }
+        .two {
+            position: relative;
+            background-image: url("Resources/citylights.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease-out;
+        }
+        .three {
+            position: relative;
+            background-image: url("Resources/cellphone.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease-out;
+        }
+        .overlay {
+            background: rgba(208, 36, 43, .6);
+            position: absolute;
+            /* background-size: cover; */
+            /* z-index: 2; */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .four {
+            border: 2px solid blue !important;
+            grid-column: 2/3;
+            grid-row: 1/4;
+            transition: all 0.5s ease-out;
+            visibility: hidden;
+        }
+
+        .show {
+            visibility: visible !important;
+            /* background: #D0242B; */
+        }
+        .clicked {
+            background: #D0242B !important;
+            color: white;
+        }
+        /* .clicked-two {
+            background: #EC4625 !important;
+            color: white;
+        }
+        .clicked-three {
+            background: #BC252A !important;
+            color: white;
+        } */
+
+        #one, #two, #three {
+            cursor: pointer;
+        }
+
+        .contents {
+            width: 80%;
+            border: 2px solid white;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .contents-2 {
+            width: 80%;
+            border: 2px solid white;
+            margin: 15vh auto;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .contents h4 {
+            display: inline;
+            
+        }
+        
+        
+
+    </style>
+
+    <header>
+        <!-- <video src="resources/typing-man.mp4" autoplay loop="true"></video> -->
+
+    </header>
+
+    <nav>
+        <div class="flex-container">
+            <!-- start of about content -->
+            <section>
+                <div class="grid-section text-white">
+                    <div id="one" class="clicked text-center"><h4>Skills</h4></div>
+                    <div class="one show">
+                        content-1
+                        <div class="overlay"></div>                        
+                        <!-- <div class="contents text-left">
+                            <img src="Resources/DP2.jpg" width="20%" height="auto" alt="" srcset="">
+                            <h4 style="background:#F25F20">HTML5</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, repellat!</p>
+                        </div> -->
+                        <!-- <div class="container mt-5">
+                            <div class="row">
+                                    <div class="col-lg-6 col-3 text-left middle">
+                                        <div class="p-4 mb-3" style="background:#F25F20">HTML5</div>
+                                        <div class="p-4 mb-3" style="background:#EC462F">CSS5</div>
+                                        <div class="p-4 mb-3" style="background:#BC252A">Vanilla Javascript</div>
+                                        <div class="p-4 mb-3" style="background:#7A1921">jQuery</div>
+                                        <div class="p-4 mb-3" style="background:#37090C; color:#F25F20">Bootstrap</div>
+                                    </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="two">
+                        content-2
+                        <div class="overlay"></div>
+                        <div class="contents-2">
+
+                            <div class="d-flex justify-content-between my-5 mx-3">
+                                <div class="align-self-start">
+                                    May 2015 – April 2016
+                                    <br>
+                                    <small>(2 years 11 months)</small>
+                                </div>
+
+                                <div class="align-self-end column-2 text-right">
+                                    <h5>Accounting Assistant</h5>
+                                    <h6>Universal Storefront Services Corporation</h6>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between my-5 mx-3">
+                                <div class="align-self-start">
+                                    May 2016 - June 2017
+                                    <br>
+                                    <small>(1 year)</small>
+                                </div>
+                                <div class="align-self-end column-2 text-right">
+                                    <h5>Technical Customer Service Support
+                                    <br> Representative</h5>
+                                    <h6>Convergys – Intuit Quickbooks Account</h6>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between my-5 mx-3">
+                                <div class="align-self-start">
+                                    July 2017 - September 2018
+                                    <br>
+                                    <small>(1 year 2 months)</small>
+                                </div>
+                                <div class="align-self-end column-2 text-right">
+                                    <h5>E-Commerce Associate</h5>
+                                    <h6>Zoomget LLC</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three">
+                        content-3
+                        <div class="overlay"></div>
+                        <div class="content-2">
+                            
+                        </div>
+                    </div>
+                    <div class="four">content-4</div>
+                    <div id="two" class="text-center"><h4>Resume</h4></div>
+                    <div id="three" class="text-center"><h4>Contact</h4></div>
+                </div>
+            </section>
+            <!-- end of about content -->
+            <div class="flex-left">
+                <!-- <div class="row justify-content-center align-items-center align-content-center" id="dp">
+                    <div class="col-md-5">
+                        <div class="">
+                                <img src="Resources/DM.jpg" class="img-fluid rounded-circle card-img-top">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="flex-right">
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-line-1">HOME</a></li>
+                    <li><a href="#" class="menu-line-2 current">ABOUT ME</a></li>
+                    <li><a href="work.html" class="menu-line-3">MY WORK</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="button">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+    </div>
+
+
+
+    <!-- <div class="name-container">
+        <h2 class="name" id="one">Zenith</h2>
+        <h2 class="name" id="two">Santos</h2>
+        <h2 class="name" id="three">Manuel</h2>
+    </div> -->
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <!-- SCRIPT -->
+    <script>
+        var menu1 = document.querySelector('#one');
+        var menu2 = document.querySelector('#two');
+        var menu3 = document.querySelector('#three');
+        var content1 = document.querySelector('.one');
+        var content2 = document.querySelector('.two');
+        var content3 = document.querySelector('.three');
+
+        var toggled = false;
+        
+
+        function hideAll(){
+            content1.classList.remove('show');
+            content2.classList.remove('show');
+            content3.classList.remove('show');
+            menu1.classList.remove('clicked');
+            menu2.classList.remove('clicked');
+            menu3.classList.remove('clicked');
+            // menu3.classList.remove(this.classList.item(0));
+        }
+
+        $("#one").on('click', function(e){
+            hideAll();
+            content1.classList.add('show');
+            menu1.classList.add('clicked');
+        })
+        $("#two").on('click', function(){
+            hideAll();
+            menu2.classList.add('clicked');
+            content2.classList.add('show');
+        })
+        $("#three").on('click', function(){
+            hideAll();
+            menu3.classList.add('clicked');
+            content3.classList.add('show');
+        })
+    </script>
+
+</body>
+</html>

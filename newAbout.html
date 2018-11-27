@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>About Me</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #252425;
+        }
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .grid-section div {
+            text-align: center;
+            vertical-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .one, .two, .three, .four {
+            grid-column: 2/3;
+            grid-row: 1/4;
+            transition: all 0.5s ease-out;
+            visibility: hidden;
+        }
+
+        .four {
+            border: 2px solid blue !important;
+            grid-column: 2/3;
+            grid-row: 1/4;
+            transition: all 0.5s ease-out;
+            visibility: hidden;
+        }
+
+        .show {
+            visibility: visible !important;
+            background: #D0242B !important;
+        }
+        .clicked {
+            background: #D0242B !important;
+            color: white;
+        }
+
+        #one, #two, #three {
+            cursor: pointer;
+        }
+
+
+
+    </style>
+
+        <div class="grid-section text-white">
+            <div id="one" class="clicked text-center"><h4>Skills</h4></div>
+            <div class="one show">content-1</div>
+            <div class="two">content-2</div>
+            <div class="three">content-3</div>
+            <div class="four">content-4</div>
+            <div id="two" class="text-center"><h4>Resume</h4></div>
+            <div id="three" class="text-center"><h4>Contact</h4></div>
+        </div>
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        var menu1 = document.querySelector('#one');
+        var menu2 = document.querySelector('#two');
+        var menu3 = document.querySelector('#three');
+        var content1 = document.querySelector('.one');
+        var content2 = document.querySelector('.two');
+        var content3 = document.querySelector('.three');
+
+        var toggled = false;
+        
+
+        function hideAll(){
+            content1.classList.remove('show');
+            content2.classList.remove('show');
+            content3.classList.remove('show');
+            menu1.classList.remove('clicked');
+            menu2.classList.remove('clicked');
+            menu3.classList.remove('clicked');
+        }
+
+        $("#one").on('click', function(e){
+            hideAll();
+            content1.classList.add('show');
+            menu1.classList.add('clicked');
+        })
+        $("#two").on('click', function(){
+            hideAll();
+            menu2.classList.add('clicked');
+            content2.classList.add('show');
+        })
+        $("#three").on('click', function(){
+            hideAll();
+            menu3.classList.add('clicked');
+            content3.classList.add('show');
+        })
+    </script>
+</body>
+</html>

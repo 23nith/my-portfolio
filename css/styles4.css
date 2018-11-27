@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh; }
+    body header {
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #252425; }
+      body header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        transform: translate(-50%, -50%); }
+    body nav {
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      body nav .flex-container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        body nav .flex-container section {
+          overflow-y: auto;
+          overflow-x: hidden;
+          height: 100vh;
+          position: fixed;
+          width: 100vw;
+          /* background: #111214;  */
+        }
+        body nav .flex-container .flex-right, body nav .flex-container .flex-left {
+          flex: 1;
+          border: 1px solid white;
+          /* transform: translate(0, 50vh); */
+          background-color: red;
+          opacity: .60;
+          padding: 0;
+          z-index: 2; }
+        body nav .flex-container .flex-left {
+          transform: translate(0, 100vh);
+          transition: all 0.5s ease-out; }
+          body nav .flex-container .flex-left .row img {
+            opacity: 100 !important;
+            margin-top: 30vh; }
+        body nav .flex-container .flex-right {
+          transform: translate(0, -100vh);
+          transition: all 0.5s ease-out; }
+          body nav .flex-container .flex-right .menu {
+            list-style-type: none;
+            text-align: center;
+            margin-top: 40vh; }
+            body nav .flex-container .flex-right .menu li:nth-child(1) {
+              transition-delay: 0.2s; }
+            body nav .flex-container .flex-right .menu li:nth-child(2) {
+              transition-delay: 0.4s; }
+            body nav .flex-container .flex-right .menu li {
+              margin-bottom: .5rem;
+              padding: 0;
+              transform: translate(50vw);
+              transition: all 0.5s ease-out; }
+              body nav .flex-container .flex-right .menu li a {
+                text-decoration: none;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 3rem;
+                color: grey;
+                transition: all 0.5s ease-out; }
+                body nav .flex-container .flex-right .menu li a.current {
+                  color: white; }
+                body nav .flex-container .flex-right .menu li a:hover {
+                  font-weight: 800;
+                  color: #fff; }
+    body .button {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      width: 30px;
+      transform: rotate(180deg);
+      transition: all 0.5s ease-out;
+      z-index: 3; }
+      body .button .line {
+        padding: 2px;
+        background-color: white;
+        width: 100%;
+        margin-bottom: 6px;
+        box-sizing: border-box; }
+      body .button #line1 {
+        transform: translate(0, 0) rotate(0);
+        transition: all 0.5s ease-out; }
+      body .button #line2 {
+        opacity: 100;
+        transition: all 0.5s ease-out; }
+      body .button #line3 {
+        transform: translate(0, 0) rotate(0);
+        transition: all 0.5s ease-out; }
+    body div.name-container {
+      overflow: hidden; }
+      body div.name-container .name {
+        font-family: 'Arial Black', Gadget, sans-serif;
+        color: white;
+        font-size: 8rem;
+        margin: 0;
+        position: absolute;
+        top: 30vh;
+        overflow: hidden; }
+      body div.name-container #one {
+        top: 50px;
+        left: 50px; }
+      body div.name-container #two {
+        top: 150px;
+        left: 50px; }
+      body div.name-container #three {
+        top: 250px;
+        left: 50px;
+        color: red; }
+  
+  .card:hover {
+    border: 1px solid red;
+    transition: all 0.5s ease-out;
+    box-shadow: 3px 10px #888888;
+    transform: translate(-3px, -10px);
+    margin: -16px; }
+    .card:hover .card-body {
+      background: red;
+      color: white;
+      font-weight: 800;
+      transition: all 0.2s ease-out; }
+      .card:hover .card-body .card-title {
+        font-size: 2rem !important; }
+  
+  div.flex-left.toggleOn {
+    transform: translate(0, 0) !important; }
+  
+  div.flex-right.toggleOn {
+    transform: translate(0, 0) !important; }
+  
+  #line1.toggleOn {
+    transform: translate(0, 10px) rotate(0.13turn) !important; }
+  
+  #line2.toggleOn {
+    opacity: 0 !important; }
+  
+  #line3.toggleOn {
+    transform: translate(0, -10px) rotate(-0.13turn) !important; }
+  
+  .button.toggleOn {
+    transform: rotate(0); }
+  
+  div.flex-right.toggleOn li {
+    transform: translate(0) !important; }
+  
+  .work {
+    overflow: scroll !important; }
+  
+  #hello {
+    z-index: 2;
+    height: 100%;
+    width: 100vw; }
+  
+  @media (max-width: 550px) {
+    div.flex-container {
+      flex-direction: column !important; }
+      div.flex-container .menu {
+        margin-top: 10vh !important;
+        padding-inline-start: 0; }
+  
+    div.flex-left {
+      transform: translate(-100vh, 0) !important; }
+  
+    div.flex-left.toggleOn {
+      transform: translate(0, 0) !important; }
+  
+    div.flex-right {
+      transform: translate(100vh, 0) !important; } }
+  
