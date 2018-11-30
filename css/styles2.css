@@ -60,6 +60,16 @@ body {
           top: 250px;
           left: 50px;
           color: red; }
+      body nav .flex-container .icon {
+        top: 80vh;
+        right: 0vw;
+        margin: 0;
+        position: absolute;
+        overflow: hidden;
+        font-size: 1.5rem;
+        color: #999; }
+        body nav .flex-container .icon .fab {
+          margin-right: 30px; }
       body nav .flex-container .flex-right, body nav .flex-container .flex-left {
         flex: 1;
         border: 1px solid white;

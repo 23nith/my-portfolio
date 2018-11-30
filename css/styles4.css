@@ -190,3 +190,48 @@ body {
     div.flex-right {
       transform: translate(100vh, 0) !important; } }
   
+  @media (max-width: 850px) {
+    .d-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+    .d-flex div {
+      align-items: center !important;
+    }
+    .contents-2 h3 {
+      font-size: 1rem;
+    }
+
+    .align-self-start img {
+      align-self: center !important;
+      margin: auto !important;
+      float: center;
+    }
+
+    .text-right {
+      margin-top: 20px;
+    }
+
+    .contents h2 {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 388px) {
+    .contents-2 h3 {
+      font-size: .8rem;
+    }
+    .align-self-start img {
+      align-self: center !important;
+      margin: auto !important;
+    }
+  }
+
+  @media (max-width: 320px) {
+    img {
+      width: 120px !important;
+    }
+    .contents-2 h3 {
+      font-size: .5rem;
+    }
+  }

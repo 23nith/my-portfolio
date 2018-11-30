@@ -83,7 +83,17 @@
             transition: all 0.5s ease-out;
         }
         .overlay {
-            background: rgba(208, 36, 43, .6);
+            background: rgba(0, 0, 0, .3);
+            position: absolute;
+            /* background-size: cover; */
+            /* z-index: 2; */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .overlay-1 {
+            background: rgba(0, 0, 0, .6);
             position: absolute;
             /* background-size: cover; */
             /* z-index: 2; */
@@ -125,7 +135,7 @@
         .contents {
             width: 80%;
             border: 2px solid white;
-            margin: auto;
+            margin: 15vh auto;
             position: relative;
             z-index: 2;
             
@@ -140,13 +150,28 @@
             
         }
 
-        .contents h4 {
-            display: inline;
-            
+        .contents h3{
+            display: inline-block;
+            margin: 20px;
         }
         
-        
+        .contents img {
+            margin: 20px;
+            float: left;
+            border: 2px solid white;
+            border-radius: 50%;
+            padding: 0;
+        }
 
+        .contents-2 h3{
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .side {
+            display: inline-block;
+            text-align: left;
+        }
     </style>
 
     <header>
@@ -162,23 +187,28 @@
                     <div id="one" class="clicked text-center"><h4>Skills</h4></div>
                     <div class="one show">
                         content-1
-                        <div class="overlay"></div>                        
-                        <!-- <div class="contents text-left">
-                            <img src="Resources/DP2.jpg" width="20%" height="auto" alt="" srcset="">
-                            <h4 style="background:#F25F20">HTML5</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, repellat!</p>
-                        </div> -->
-                        <!-- <div class="container mt-5">
-                            <div class="row">
-                                    <div class="col-lg-6 col-3 text-left middle">
-                                        <div class="p-4 mb-3" style="background:#F25F20">HTML5</div>
-                                        <div class="p-4 mb-3" style="background:#EC462F">CSS5</div>
-                                        <div class="p-4 mb-3" style="background:#BC252A">Vanilla Javascript</div>
-                                        <div class="p-4 mb-3" style="background:#7A1921">jQuery</div>
-                                        <div class="p-4 mb-3" style="background:#37090C; color:#F25F20">Bootstrap</div>
-                                    </div>
+                        <div class="overlay-1"></div>                        
+                        <div class="contents text-left p-3">
+                            <h2 class="display-4">About Me</h2>
+
+                            <div class="d-flex justify-content-around">
+
+                                <div class="align-self-start">
+                                    <img src="Resources/DP2.jpg" width="150px" height="auto" class="border-rounded">
+                                </div>
+
+                                <div class="align-self-end">
+                                    <h3>Bio</h3>
+                                    <p>Hi, my name is Zenith Manuel. A self taught front-end Web Developer (will eventually study back-end) who knows how to create, design and modify web content. Though my work experiences are not directly related to Web Development, I have gained the capacity to adapt and work with minimal supervision. I am a tech enthusiast by nature which makes learning technical skills fun for me.</p>
+                                </div>
+                                
+                               
                             </div>
-                        </div> -->
+                            <div style="display: block; margin: auto;" class="text-center">
+                                <p>Technical Knowledge: HTML5, CSS3, Vanilla Javascript, jQuery, Bootstrap and counting..</p> 
+                            </div>
+
+                        </div>
                     </div>
                     <div class="two">
                         content-2
@@ -227,12 +257,36 @@
                     <div class="three">
                         content-3
                         <div class="overlay"></div>
-                        <div class="content-2">
-                            
+                        <div class="contents-2">
+                            <h3>Contact Me</h3>
+                            <div class="d-flex justify-content-between mb-4">
+                                <div class="align-self-start">
+                                    <h3>Email:</h3>
+                                </div>
+                                <div class="align-self-end text-right">
+                                    <h3>zenithmanuel@gmail.com</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <div class="align-self-start">
+                                    <h3>Phone:</h3>
+                                </div>
+                                <div class="align-self-end ">
+                                    <h3>0927-33-46-763</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start">
+                                    <h3>Address:</h3>
+                                </div>
+                                <div class="align-self-end text-right">
+                                    <h3>Blk 5 Lot 2 Villa Lourdes Town Homes Congressional Avenue Quezon City</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="four">content-4</div>
-                    <div id="two" class="text-center"><h4>Resume</h4></div>
+                    <div id="two" class="text-center"><h4>Experience</h4></div>
                     <div id="three" class="text-center"><h4>Contact</h4></div>
                 </div>
             </section>
@@ -287,7 +341,7 @@
         var content3 = document.querySelector('.three');
 
         var toggled = false;
-        
+        $("div.two .contents-2").hide();
 
         function hideAll(){
             content1.classList.remove('show');
@@ -296,6 +350,9 @@
             menu1.classList.remove('clicked');
             menu2.classList.remove('clicked');
             menu3.classList.remove('clicked');
+            $(".contents").hide();
+            $("div.two .contents-2").hide();
+            $("div.three .contents-2").hide();
             // menu3.classList.remove(this.classList.item(0));
         }
 
@@ -303,16 +360,19 @@
             hideAll();
             content1.classList.add('show');
             menu1.classList.add('clicked');
+            $(".contents").show();
         })
         $("#two").on('click', function(){
             hideAll();
             menu2.classList.add('clicked');
             content2.classList.add('show');
+            $(".two .contents-2").show();
         })
         $("#three").on('click', function(){
             hideAll();
             menu3.classList.add('clicked');
             content3.classList.add('show');
+            $(".three .contents-2").show();
         })
     </script>
 
