@@ -63,6 +63,7 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
             transition: all 0.5s ease-out;
+            overflow: auto;
         }
         .two {
             position: relative;
@@ -72,6 +73,8 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
             transition: all 0.5s ease-out;
+            overflow: auto;
+            z-index: 2000;
         }
         .three {
             position: relative;
@@ -81,14 +84,14 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
             transition: all 0.5s ease-out;
+            overflow: auto;
         }
         .overlay {
             background: rgba(0, 0, 0, .3);
             position: absolute;
             /* background-size: cover; */
-            /* z-index: 2; */
             top: 0;
-            left: 0;
+            /* left: 0; */
             height: 100%;
             width: 100%;
         }
@@ -96,9 +99,7 @@
             background: rgba(0, 0, 0, .6);
             position: absolute;
             /* background-size: cover; */
-            /* z-index: 2; */
             top: 0;
-            left: 0;
             height: 100%;
             width: 100%;
         }
@@ -138,7 +139,6 @@
             margin: 15vh auto;
             position: relative;
             z-index: 2;
-            
         }
 
         .contents-2 {
