@@ -77,6 +77,23 @@ body {
                     left: 50px;
                     color: red;
                 }
+
+
+            }
+
+            .icon {
+                // top: 450px;
+                top: 80vh;
+                right: 0vw;
+                margin: 0;
+                position: absolute;
+                overflow: hidden;
+                font-size: 1.5rem;
+                color: #999;
+
+                .fab {
+                    margin-right: 30px;
+                }
             }
 
             .flex-right, .flex-left {
@@ -91,6 +108,10 @@ body {
             .flex-left {
                 transform: translate(0, 100vh);
                 transition: all 0.5s ease-out;
+
+                .row {
+                    border-radius: 50%;
+                }
             }
 
             .flex-right {
@@ -120,11 +141,16 @@ body {
                             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                             font-size: 3rem;
                             color: grey;
+                            transition: all 0.5s ease-out;
 
                             &.current {
                                 color: white;
                             }
 
+                            &:hover {
+                                font-weight: 800;
+                                color: #fff;
+                            }
                         }
 
                     }

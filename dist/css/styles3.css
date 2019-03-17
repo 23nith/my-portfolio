@@ -42,7 +42,8 @@ body {
         overflow-y: auto;
         overflow-x: hidden;
         height: 70vh;
-        position: fixed; }
+        position: fixed;
+        background: #111214; }
       body nav .flex-container .flex-right, body nav .flex-container .flex-left {
         flex: 1;
         border: 1px solid white;
@@ -54,6 +55,9 @@ body {
       body nav .flex-container .flex-left {
         transform: translate(0, 100vh);
         transition: all 0.5s ease-out; }
+        body nav .flex-container .flex-left .row img {
+          opacity: 100 !important;
+          margin-top: 30vh; }
       body nav .flex-container .flex-right {
         transform: translate(0, -100vh);
         transition: all 0.5s ease-out; }
@@ -74,9 +78,13 @@ body {
               text-decoration: none;
               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
               font-size: 3rem;
-              color: grey; }
+              color: grey;
+              transition: all 0.5s ease-out; }
               body nav .flex-container .flex-right .menu li a.current {
                 color: white; }
+              body nav .flex-container .flex-right .menu li a:hover {
+                font-weight: 800;
+                color: #fff; }
   body .button {
     position: absolute;
     right: 25px;
@@ -120,6 +128,20 @@ body {
       top: 250px;
       left: 50px;
       color: red; }
+
+.card:hover {
+  border: 1px solid red;
+  transition: all 0.5s ease-out;
+  box-shadow: 3px 10px #888888;
+  transform: translate(-3px, -10px);
+  margin: -16px; }
+  .card:hover .card-body {
+    background: red;
+    color: white;
+    font-weight: 800;
+    transition: all 0.2s ease-out; }
+    .card:hover .card-body .card-title {
+      font-size: 2rem !important; }
 
 div.flex-left.toggleOn {
   transform: translate(0, 0) !important; }

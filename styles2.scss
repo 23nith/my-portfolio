@@ -69,6 +69,7 @@ body {
                 overflow-x: hidden;
                 height: 70vh;
                 position: fixed;
+                background: #111214;
             }
             
 
@@ -85,6 +86,13 @@ body {
             .flex-left {
                 transform: translate(0, 100vh);
                 transition: all 0.5s ease-out;
+
+                .row {
+                    img {
+                        opacity: 100 !important;
+                        margin-top: 30vh;
+                    }
+                }
             }
 
             .flex-right {
@@ -113,9 +121,15 @@ body {
                             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                             font-size: 3rem;
                             color: grey;
+                            transition: all 0.5s ease-out;
 
                             &.current {
                                 color: white;
+                            }
+
+                            &:hover {
+                                font-weight: 800;
+                                color: #fff;
                             }
 
                         }
@@ -188,9 +202,30 @@ body {
             left: 50px;
             color: red;
         }
+
     }
 
 }
+
+.card:hover {
+    border: 1px solid red;
+    transition: all 0.5s ease-out;
+    box-shadow: 3px 10px #888888;
+    transform: translate(-3px, -10px);
+    margin: -16px;
+
+    .card-body {
+        background: red;
+        color: white;
+        font-weight: 800;
+        transition: all 0.2s ease-out;
+        
+        .card-title {
+            font-size: 2rem !important;
+        }
+    }
+}
+
 
 // toggle styles
 div.flex-left.toggleOn {
