@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+  .message-alert {
+    margin: 5px 0 15px 0;
+    padding: 5px;
+    /* background: blue; */
+    color: white;
+    display: none;
+  }
+  .message-alert h6 {
+    margin: auto;
+  }
+  .error {
+    background-color: red;
+    color: white;
+  }
+
+  .success {
+    background-color: green;
+    color: white;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Add Book</h1>
+    <div class="message-alert">
+      <h6></h6>
+    </div>
+    <h6>Book Title</h6>
+    <input type="text" name="" id="book-title">
+    <h6>Author</h6>
+    <input type="text" name="" id="author">
+    <h6>ISBN</h6>
+    <input type="text" name="" id="isbn" class="twelve-columns isbn">
+    <br>
+    <input type="submit" value="Submit" id="submit">
+  </div>
+
+<div class="container">
+    <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+</div>
+
+
+
+  <!-- <script src="app.js"></script> -->
+  <!-- <script src="app-es5.js"></script> -->
+  <script src="js/booklist.js"></script>
+</body>
+</html>

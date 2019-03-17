@@ -1,0 +1,114 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: url(../Resources/psd-2/bg_body.jpg) repeat-x 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/*header*/
+	.header {
+		height: 125px;
+		width: 967px;
+		margin: 90px auto 0 auto;
+	}
+
+	.header h1 {
+		float: left;
+		height: 125px;
+		width: 320px;
+		background: url(../Resources/psd-2/logo.jpg) no-repeat 0 0;
+		text-indent: -10000px;
+		margin-top: 0;
+	}
+
+	.header h1 a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.header h1 a:hover {
+		background: url(../Resources/psd-2/logo.jpg) no-repeat 0 -125px;
+	}
+
+	.header ul {
+		list-style-type: none;
+		float: right;
+		display: block;
+		padding-left: 0;
+		background: url(../Resources/psd-2/menu.jpg) no-repeat 0 0;
+/*		width: 645px;*/
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.header ul li {
+		display: inline-block;
+/*		border: 1px solid red;*/
+		height: 125px;
+		text-indent: -10000px;
+		margin: 0;
+	}
+
+	.header ul li a {
+		height: 100%;
+/*		border: 1px solid blue;*/
+		display: block;
+	}
+
+	#home {
+		width: 162px;
+
+	}
+
+	#about {
+		width: 136px;
+	}
+
+	#work {
+		width: 126px;		
+	}
+
+	#contact {
+		width: 207px;
+
+	}
+
+	#home a:hover {
+		background: url(../Resources/psd-2/menu.jpg) no-repeat 0 -125px;
+
+	}
+
+	#about a:hover {
+		background: url(../Resources/psd-2/menu.jpg) no-repeat -163px -125px;
+		margin-left: -3px;
+	}
+
+	#work a:hover {
+		background: url(../Resources/psd-2/menu.jpg) no-repeat -302px -125px;
+		margin-left: -4px;
+	}
+
+	#contact a:hover {
+		background: url(../Resources/psd-2/menu.jpg) no-repeat -432px -125px;
+		margin-left: -4px;
+	}
+
+
+
+
+
