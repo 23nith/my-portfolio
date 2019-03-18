@@ -27,42 +27,69 @@
     background-color: green;
     color: white;
   }
+
+  .current-script {
+    white-space: pre-wrap;
+    overflow: scroll;
+    height: 70vh;
+    background-color: #e9e9e9;
+  }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Add Book</h1>
-    <div class="message-alert">
-      <h6></h6>
-    </div>
-    <h6>Book Title</h6>
-    <input type="text" name="" id="book-title">
-    <h6>Author</h6>
-    <input type="text" name="" id="author">
-    <h6>ISBN</h6>
-    <input type="text" name="" id="isbn" class="twelve-columns isbn">
-    <br>
-    <input type="submit" value="Submit" id="submit">
+      <div class="row">
+        <div class="one-half column book">
+            <h1>Add Book</h1>
+            <div class="message-alert">
+              <h6></h6>
+            </div>
+            <h6>Book Title</h6>
+            <input type="text" name="" id="book-title">
+            <h6>Author</h6>
+            <input type="text" name="" id="author">
+            <h6>ISBN</h6>
+            <input type="text" name="" id="isbn" class="twelve-columns isbn">
+            <br>
+            <input type="submit" value="Submit" id="submit">
+          
+        
+        
+            <table>
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>ISBN</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+
+        </div>
+
+        <div class="one-half column">
+          <div class="row" style="margin-bottom: 50px">
+              <button id="es6">ES6</button>
+              <button id="es5">ES5</button>
+              <button id="spag">Spaghetti Code</button>
+          </div>
+
+          <div class="current-script">
+
+          </div>
+        </div>
+        
+      </div>
+
+
+    
   </div>
-
-<div class="container">
-    <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-</div>
-
-
 
   <!-- <script src="app.js"></script> -->
   <!-- <script src="app-es5.js"></script> -->
-  <script src="js/booklist.js"></script>
+  <script src="js/booklist-es6.js" id='myScript'></script>
+  <script src="js/booklist-switch.js"></script>
 </body>
 </html>
