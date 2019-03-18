@@ -258,12 +258,12 @@ nav ul li a {
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.three-columns div {
+/* .three-columns div { */
 /*	margin-top: 20px;*/
 /*	border: 1px solid red;*/
 /*	padding: 5px;*/
 /*	margin-bottom: 20px;*/
-}
+/* } */
 
 .three-columns>div {
 	margin-top: 20px;
@@ -398,4 +398,36 @@ nav ul li a {
 		margin-left: 50px;
 	}
 
+}
+
+/* modal */
+
+.modal {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+/*   background-color: red; */
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.modal-content{
+	display: none;
+	padding: 5em;
+	background-color: white;
+	position: absolute;
+	float: left;
+	width: 50vw;
+	height: 30vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	overflow: scroll;
+}
+
+.myScript {
+	white-space: pre-wrap;
 }

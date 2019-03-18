@@ -99,7 +99,60 @@
 					
 				</div>
 			</div>
+
 		</div>
+		<!-- modal -->
+		<div class="modal"></div>
+    <div class="modal-content">
+				<p>
+						Found this <span><a href="https://www.webfx.com/blog/images/assets/downloads.sixrevisions.com/grunge-design-from-scratch.zip">PSD</a></span> online but took it up a notch by making the site responsive.
+				</p>
+				<br>
+				<p>
+					You may try to resize your browser to see the responsiveness of the site.
+				</p>
+				<br>
+				<p>
+					Hovering over the menus changes the color of the psd layer image.
+				</p>
+
+				
+				
+      <br>
+      <div style="text-align:center;margin: 20px">
+        <button id="closeModal">close</button>
+      </div>
+		</div>
+
+		<!-- modal script -->
+		<script>
+			const btn = document.querySelector('#closeModal');
+			const modal = document.querySelector('.modal');
+			const modalCont = document.querySelector('.modal-content');
+
+			document.addEventListener('DOMContentLoaded', function(){
+				modal.style.display = 'block';
+				modalCont.style.display = 'block';
+			})
+
+			// modal.addEventListener('click', function(e){
+			//   if(e.target.classList.contains('modal')){ 
+			//   	modal.style.display = 'none';
+			//   	modalCont.style.display = 'none';    
+			//   }
+			//     console.log(e.target);
+			// });
+
+			btn.addEventListener('click', function(){
+				
+					modal.style.display = 'none';
+					modalCont.style.display = 'none';    
+				
+			});
+		
+		
+		
+		</script>
 		<footer>
 			<div class="footer-img">
 			</div>
