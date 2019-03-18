@@ -61,3 +61,28 @@ spagBtn.addEventListener('click', function(){
   }
   http.send();
 })
+
+// MODAL
+const btn = document.querySelector('#closeModal');
+const modal = document.querySelector('.modal');
+const modalCont = document.querySelector('.modal-content');
+
+document.addEventListener('DOMContentLoaded', function(){
+	modal.style.display = 'block';
+  modalCont.style.display = 'block';
+})
+
+// modal.addEventListener('click', function(e){
+//   if(e.target.classList.contains('modal')){ 
+//   	modal.style.display = 'none';
+//   	modalCont.style.display = 'none';    
+//   }
+//     console.log(e.target);
+// });
+
+btn.addEventListener('click', function(){
+   
+  	modal.style.display = 'none';
+  	modalCont.style.display = 'none';    
+  
+});
