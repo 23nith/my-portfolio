@@ -172,6 +172,12 @@
             display: inline-block;
             text-align: left;
         }
+
+        #map {
+            height: 250px;
+            width: 100%;
+            border: solid white 2px;
+        }
     </style>
 
     <header>
@@ -282,6 +288,10 @@
                                 <div class="align-self-end text-right">
                                     <h3>Blk 5 Lot 2 Villa Lourdes Town Homes Congressional Avenue Quezon City</h3>
                                 </div>
+                 
+                            </div>
+                            <div id="map">
+                                    
                             </div>
                         </div>
                     </div>
@@ -375,6 +385,9 @@
             $(".three .contents-2").show();
         })
     </script>
-
+    <script src='js/map.js'></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsOqzG8Kk4XnrKhUxMqG-ARpt0HpnbfTY&callback=initMap"></script>
+    </script>
 </body>
 </html>
