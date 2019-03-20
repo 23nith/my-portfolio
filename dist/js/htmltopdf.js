@@ -1,4 +1,18 @@
 let btn = document.getElementById('download');
+let instbtn = document.getElementById('instbtn');
+let click = 0;
+instbtn.addEventListener('click', function(){
+  if(click === 0){
+    document.getElementById('instructions').style.display = 'block';
+    click = 1;
+    instbtn.innerHTML = 'Hide';
+  }else{
+    document.getElementById('instructions').style.display = 'none';
+    click = 0;
+    instbtn.innerHTML = 'Download Taking too long?';
+  }
+  
+})
 btn.addEventListener('click', process)
 
 
