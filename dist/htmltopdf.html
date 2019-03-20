@@ -22,6 +22,37 @@
       <p>If loading takes too long please click on the shield (for Chrome) or padlock (for Firefox) icon on the right (left for Firefox) side of the browser url field and select temporarily disable protection option then try again.</p>
       <input type="text" id='userInput' placeholder='http://...'>
       <button id='download'>Download</button>
+      
+      <label for="size">Size</label>
+      <select name=size id="size">
+          <option value="A0">AO</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="A3">A3</option>
+          <option value="A4">A4</option>
+          <option value="A5">A5</option>
+          <option value="A6">A6</option>
+          <option value="A7">A7</option>
+          <option value="A8">A8</option>
+          <option value="A9">A9</option>
+          <option value="C5E">C5E</option>
+          <option value="Comm10E">Comm10E</option>
+          <option value="DLE">DLE</option>
+          <option value="Executive">Executive</option>
+          <option value="Folio">Folio</option>
+          <option value="Ledger">Ledger</option>
+          <option value="Legal">Legal</option>
+          <option value="Letter">Letter</option>
+          <option value="Tabloid">Tabloid</option>
+        </select>
+
+      <label for="orientation">Orientation</label>
+      <select name=orientation id='orientation'>
+          <option value="portrait">portrait</option>
+          <option value="landscape">landscape</option>
+      </select>
+
+
       <div id="loading"></div>
   </div>
 
