@@ -1,14 +1,15 @@
 var button = document.querySelector('.button');
 var left = document.querySelector('.flex-left');
 var right = document.querySelector('.flex-right');
-var line1 = document.querySelector('#line1')
-var line2 = document.querySelector('#line2')
-var line3 = document.querySelector('#line3')
-
+var line1 = document.querySelector('#line1');
+var line2 = document.querySelector('#line2');
+var line3 = document.querySelector('#line3');
+var vid = document.querySelector('#video');
 
 var toggleOn = false;
 
 button.addEventListener("click", myFunc);
+
 
 
 function myFunc(){
@@ -34,3 +35,8 @@ function myFunc(){
 
 };
 
+window.addEventListener("load", (event)=>{
+    vid.play();
+    console.log("video should play")
+    console.log(vid);
+});
