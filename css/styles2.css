@@ -70,6 +70,7 @@ body {
         color: #999; }
         body nav .flex-container .icon .fab {
           margin-right: 30px; }
+          /* margin-right: 20px; } */
       body nav .flex-container .flex-right, body nav .flex-container .flex-left {
         flex: 1;
         border: 1px solid white;
@@ -198,4 +199,9 @@ div.flex-right.toggleOn li {
   #three {
     top: 200px !important;
     left: 50px;
-    color: red; } }
+    color: red; } 
+  
+  body nav .flex-container .icon .fab {
+    /* margin-right: 30px; } */
+    margin-right: 10px; }
+  }
