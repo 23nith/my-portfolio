@@ -210,12 +210,12 @@ body {
     #edu {
       flex-flow: column;
     }
-    #edu div p{
-      text
-    }
+    /* #edu div p{
+      
+    } */
     .d-flex {
       flex-direction: column;
-      text-align: center;
+      text-align:center;
     }
     .d-flex div {
       align-items: center !important;
