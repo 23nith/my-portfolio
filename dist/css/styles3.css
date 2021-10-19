@@ -199,16 +199,16 @@ div.flex-right.toggleOn li {
     transform: translate(100vh, 0) !important; } }
 
 
-/**
 
-  /* wd , trck, hndle
+
+  /* wd , trck, hndle */
   ::-webkit-scrollbar {
     width: 5px;
   }
   
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
-    /* border-radius: 10px; 
+    /* border-radius: 10px; */
   }
   
   ::-webkit-scrollbar-thumb {
@@ -216,4 +216,3 @@ div.flex-right.toggleOn li {
     border-radius: 2px;
   }
 
-  **/
