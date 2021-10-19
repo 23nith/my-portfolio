@@ -197,3 +197,23 @@ div.flex-right.toggleOn li {
 
   div.flex-right {
     transform: translate(100vh, 0) !important; } }
+
+
+/**
+
+  /* wd , trck, hndle
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    /* border-radius: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 2px;
+  }
+
+  **/
