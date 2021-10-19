@@ -201,6 +201,18 @@ body {
       transform: translate(100vh, 0) !important; } }
   
   @media (max-width: 850px) {
+    #dp {
+      margin: 0 auto;
+    }
+    #niat {
+      flex-flow: row;
+    }
+    #edu {
+      flex-flow: column;
+    }
+    #edu div p{
+      text
+    }
     .d-flex {
       flex-direction: column;
       text-align: center;
