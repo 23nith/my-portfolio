@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles2.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles2.css" />
+  </head>
+  <body>
     <header>
-        <video id="video" src="Resources/typing-man.mp4" playsinline autoplay muted loop="true"></video>
+      <video
+        id="video"
+        src="Resources/typing-man.mp4"
+        playsinline
+        autoplay
+        muted
+        loop="true"
+      ></video>
     </header>
     <nav>
-        <div class="flex-container">
-            <div class="name-container">
-                <h2 class="name" id="one">Zenith</h2>
-                <h2 class="name" id="two">Santos</h2>
-                <h2 class="name" id="three">Manuel</h2>
-           
-            </div>
-            <div class="icon">
-                    <!-- <i class="fab fa-facebook fa-2x" onclick="window.open('https://www.facebook.com/zenith.manuel?ref=br_rs','mywindow');" style="cursor: pointer;"></i> -->
-                    <i class="fab fa-linkedin fa-2x" onclick="window.open('https://www.linkedin.com/in/maria-zenith-manuel-96b874144?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdepTUy60RNOZHgN0iTnnNA%3D%3D','mywindow');" style="cursor: pointer;"></i>
-                    <i class="fab fa-twitter fa-2x" onclick="window.open('https://twitter.com/23nith','mywindow');" style="cursor: pointer;"></i>
-                    <i class="fab fa-instagram fa-2x" onclick="window.open('https://www.instagram.com/meetme.at.thezenith','mywindow');" style="cursor: pointer;"></i>
-                    <i class="fab fa-github fa-2x" onclick="window.open('https://github.com/23nith','mywindow');" style="cursor: pointer;"></i>
-                    <i class="fab fa-facebook fa-2x" style="cursor: pointer;"></i>
-            </div>     
-            <div class="flex-left">
-            </div>
-            <div class="flex-right">
-                <ul class="menu">
-                    <li><a href="#" class="menu-line-1 current">HOME</a></li>
-                    <li><a href="aboutMe.html" class="menu-line-2">ABOUT ME</a></li>
-                    <li><a href="work2.html" class="menu-line-3">MY WORK</a></li>
-                </ul>
-            </div>
+      <div class="flex-container">
+        <div class="name-container">
+          <h2 class="name" id="one">Zenith</h2>
+          <h2 class="name" id="two">Santos</h2>
+          <h2 class="name" id="three">Manuel</h2>
         </div>
+        <div class="icon">
+          <!-- <i class="fab fa-facebook fa-2x" onclick="window.open('https://www.facebook.com/zenith.manuel?ref=br_rs','mywindow');" style="cursor: pointer;"></i> -->
+          <i
+            class="fab fa-linkedin fa-2x"
+            onclick="window.open('https://www.linkedin.com/in/maria-zenith-manuel-96b874144?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdepTUy60RNOZHgN0iTnnNA%3D%3D','mywindow');"
+            style="cursor: pointer"
+          ></i>
+          <i
+            class="fab fa-twitter fa-2x"
+            onclick="window.open('https://twitter.com/23nith','mywindow');"
+            style="cursor: pointer"
+          ></i>
+          <i
+            class="fab fa-instagram fa-2x"
+            onclick="window.open('https://www.instagram.com/meetme.at.thezenith','mywindow');"
+            style="cursor: pointer"
+          ></i>
+          <i
+            class="fab fa-github fa-2x"
+            onclick="window.open('https://github.com/23nith','mywindow');"
+            style="cursor: pointer"
+          ></i>
+          <i class="fab fa-facebook fa-2x" style="cursor: pointer"></i>
+        </div>
+        <div class="flex-left"></div>
+        <div class="flex-right">
+          <ul class="menu">
+            <li><a href="#" class="menu-line-1 current">HOME</a></li>
+            <li><a href="aboutMe.html" class="menu-line-2">ABOUT ME</a></li>
+            <li><a href="work2.html" class="menu-line-3">MY WORK</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="button">
-        <div class="line" id="line1"></div>
-        <div class="line" id="line2"></div>
-        <div class="line" id="line3"></div>
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
     </div>
-
-
-
 
     <!-- SCRIPT -->
     <script src="js/main.js"></script>
     <script>
-        var video = document.querySelector('#video'); 
-        video.addEventListener('DOMContentLoaded',function(){ video.play(); },false);
+      var video = document.querySelector("#video");
+      video.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          video.play();
+        },
+        false
+      );
     </script>
-</body>
+  </body>
 </html>
